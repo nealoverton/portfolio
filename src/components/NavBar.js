@@ -3,14 +3,23 @@ import { TfiWorld } from 'react-icons/tfi';
 
 const Navbar = () => {
 
-    return <div className='Navbar'>
+    return <div className='NavBar'>
         <div className='info-container'>
-            <div className='logo'>
-                <h2 className='logo__text--blue'>N</h2>
-                <h2 className='logo__text--black'>njo dev docs</h2>
-                <h2 className='logo__text--blue'>_</h2>
+            <div className='info-container--left'>
+                <div className='logo'>
+                    <h2 className='logo__text--blue'>N</h2>
+                    <h2 className='logo__text--black'>njo dev docs</h2>
+                    <h2 className='logo__text--blue'>_</h2>
+                </div>
+                <a className='info-container__link' href='https://github.com/nealoverton' target='_blank'>Github</a>
+                <a className='info-container__link' href='https://www.linkedin.com/in/neal-overton-b07027234/' target='_blank'>LinkedIn</a>
             </div>
-            <button className='info-container__button'>Get in touch</button>
+            
+            <div className='info-container--right'>
+                <p className='info-container__question'>More questions?</p>
+                <button className='info-container__button'>Get in touch</button>
+            </div>
+            
         </div>
         
         <div className='path-container'>
