@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+.info__button{
+    height: 3em;
+    width: 8em;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 0.4em;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    width: 10em;
+}
+
+.logo__text--blue{
+    color: rgb(62, 140, 204);
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0em;
+}
+
+.logo__text--black{
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    font-size: 1em;
+}
+
+.path{
+    background-color: var(--lightgrey);
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 0.6em;
+    
+}
+
+.path p{
+    margin: 0.4em;
+    font-weight: 300;
+    white-space: pre-wrap;
+}
+
+.path span{
+    color: var(--grey);
+}
