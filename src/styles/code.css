@@ -11,5 +11,10 @@
 }
 
 .comment{
-    color: var(--grey);
+    color: var(--commentgrey);
+    white-space: pre-wrap;
+}
+
+.code-background{
+    background-color: var(--codegrey);
 }

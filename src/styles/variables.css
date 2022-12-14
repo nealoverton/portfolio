@@ -1,6 +1,8 @@
 :root {
-    --lightgrey: rgb(245, 245, 245);
     --grey: rgb(200, 200, 200);
+    --lightgrey: rgb(245, 245, 245);
+    --codegrey: rgb(230, 230, 230);
+    --commentgrey: rgb(150, 150, 150);
     --highlight: rgb(161, 151, 56);
     --highlight-bg: rgb(223, 219, 183);
     --blue: rgb(62, 140, 204);

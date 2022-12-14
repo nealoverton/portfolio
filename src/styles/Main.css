@@ -12,6 +12,11 @@
     font-weight: 500;
 }
 
+.Main__intro{
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
 .Main__subtitle{
     font-size: 2rem;
     font-weight: 450;
@@ -110,4 +115,19 @@
     margin: 0.6rem;
     font-weight: 350;
 }
+
+.skills-box{
+    background-color: var(--codegrey);
+    width: 100%;
+    overflow: auto;
+}
+
+.skills-box__text{
+    margin: 0.8rem;
+    text-align: justify;
+    line-height: 2em;
+}
+
+
+
 
