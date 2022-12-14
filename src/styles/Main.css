@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
+    max-width: 50rem;
     padding: 1rem 3rem 3rem 3rem;
 }
 
@@ -52,6 +53,7 @@
 
 .code-demo__body__number-column p{
     margin: 0.1rem;
+    font-weight: 350;
 }
 
 .code-demo__body__code-field{
@@ -63,6 +65,7 @@
 .code-demo__body__code-field p{
     margin: 0.1rem;
     line-height: 1.3rem;
+    font-weight: 350;
 }
 
 .code-demo__output-row{
@@ -93,7 +96,7 @@
     background-color: var(--grey);
 }
 
-.code-demo__output-row__output{
+.code-demo__output-row__output-box{
     width: 100%;
     height: 10rem;
     background-color: var(--lightgrey);
@@ -101,3 +104,10 @@
     border-radius: 0.2rem;
     margin-top: 0.5rem;
 }
+
+.code-demo__output-row__output-text{
+    text-align: justify;
+    margin: 0.6rem;
+    font-weight: 350;
+}
+

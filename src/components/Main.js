@@ -3,7 +3,7 @@ import '../styles/styles.js';
 const Main = () => {
     const codeText = "const newDev = new Dev(2020);\n \t \n \t.then((data) => console.log(data));"
 
-    const outputText = "";
+    const outputText = "> Put some stuff here";
 
 
     return <div className='Main'>
@@ -24,7 +24,7 @@ const Main = () => {
                 </div>
                 <div className='code-demo__body__code-field'>
                     <p>
-                    {codeText}
+                    <span className='blue'>const</span> newDev = new <span className='red'>Dev</span>(<span className='green'>2020</span>);
                     </p>
                 </div>
             </div>
@@ -33,10 +33,13 @@ const Main = () => {
                     <button className='code-demo__output-row__button'>Run &#62;</button>
                     <button className='code-demo__output-row__button'>Reset</button>
                 </div>
-                <div className='code-demo__output-row__output'></div>
+                <div className='code-demo__output-row__output-box'>
+                    <p className='code-demo__output-row__output-text'>{outputText}</p>
+                </div>
             </div>
         </div>
         <h2 className='Main__subtitle'>Skills</h2>
+        <div></div>
     </div>
 }
 
