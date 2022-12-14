@@ -4,6 +4,7 @@ import { TfiWorld } from 'react-icons/tfi';
 const Navbar = () => {
 
     return <div className='NavBar'>
+        <div className='Navbar__full-width-banner'/>
         <div className='info-container'>
             <div className='info-container--left'>
                 <div className='logo'>

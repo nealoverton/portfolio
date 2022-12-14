@@ -5,4 +5,5 @@ import "./NavBar.css";
 import "./Home.css";
 import "./SideBar.css";
 import "./Main.css";
-import "./Sections.css";
+import "./SectionMenu.css";
+import "./code.css";

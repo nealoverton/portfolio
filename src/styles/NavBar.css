@@ -3,12 +3,25 @@
     flex-direction: column;
     justify-content: space-between;
     height: 5.5rem;
+    width: 100%;
     background-color: white;
     box-sizing: border-box;
     z-index: 1;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+.Navbar__full-width-banner{
+    height: 1.9rem;
+    width: 800rem;
+    background-color: var(--lightgrey);
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    z-index: -1;
 }
 
 .info-container{
@@ -102,6 +115,7 @@
 
 .path-container__path span{
     color: var(--grey);
+    font-weight: 500;
 }
 
 .path-container__language{
