@@ -17,4 +17,5 @@
 
 .code-background{
     background-color: var(--codegrey);
+    font-weight: 400;
 }

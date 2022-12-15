@@ -19,6 +19,7 @@ const SideBar = () => {
         <p><IoFlask className='blue'/>Dev.prototype.Flutter()</p>
         <p>Dev.prototype.HTML()</p>
         <p>Dev.prototype.Java()</p>
+        <p>Dev.prototype.Jest()</p>
         <p>Dev.prototype.PostgreSQL()</p>
         <p>Dev.prototype.React()</p> 
         <p>Dev.prototype.SQL()</p>
