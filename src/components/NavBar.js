@@ -2,6 +2,9 @@ import '../styles/styles.js';
 import { TfiWorld } from 'react-icons/tfi';
 
 const Navbar = () => {
+    const handleEmail = () => {
+        window.location.href = "mailto:nealjoverton@gmail.com";
+    }
 
     return <div className='NavBar'>
         <div className='Navbar__full-width-banner'/>
@@ -18,7 +21,7 @@ const Navbar = () => {
             
             <div className='info-container--right'>
                 <p className='info-container__question'>More questions?</p>
-                <button className='info-container__button'>Get in touch</button>
+                <button className='info-container__button' onClick={handleEmail}>Get in touch</button>
             </div>
             
         </div>

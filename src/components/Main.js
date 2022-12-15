@@ -26,6 +26,7 @@ const Main = () => {
    
 
     const skillsText = <p className='skills-box__text'>
+        <a className='anchor' id='languages'/>
         <span className='comment'>&#47;&#47;  Languages</span><br/>
         {nealOverton}((<span className='blue'>JavaScriptES6</span>, <span className='blue'>Node.js</span>) ={blockOpen}* advanced, used throughout bootcamp and beyond *{blockClose})<br/>
         {nealOverton}((<span className='blue'>Java</span>) ={blockOpen}* self-taught up to advanced concepts like interfaces and generics*{blockClose})<br/>
@@ -33,10 +34,12 @@ const Main = () => {
         {nealOverton}((<span className='blue'>CSS</span>) ={blockOpen}* ... *{blockClose})<br/>
         {nealOverton}((<span className='blue'>C#</span>) ={blockOpen}* experience is limited to experimenting with Unity, but I'm having fun *{blockClose})<br/>
         {nealOverton}((<span className='blue'>Dart</span>) ={blockOpen}* experience is limited to experimenting with Flutter, but my Java experience means everything seems quite familiar *{blockClose})<br/>
+        <a className='anchor' id='frameworks'/>
         <br/><span className='comment'>&#47;&#47;  Frameworks</span><br/>
         {nealOverton}((<span className='blue'>React</span>) ={blockOpen}* extensive experience, take a look at examples below (including this one) *{blockClose})<br/>
         {nealOverton}((<span className='blue'>Jest</span>) ={blockOpen}* well-versed in TDD including spies and mock functions *{blockClose})<br/>
         {nealOverton}((<span className='blue'>Flutter</span>) ={blockOpen}* experimented with some basic apps, love how the layout and styling is done right there as you place the widget *{blockClose})<br/>
+        <a className='anchor' id='other'/>
         <br/><span className='comment'>&#47;&#47;  Other</span><br/>
         {nealOverton}((<span className='blue'>PostgreSQL</span>) ={blockOpen}* example below *{blockClose})<br/>
         {nealOverton}((<span className='blue'>Unity</span>) ={blockOpen}* example below *{blockClose})<br/>
@@ -48,6 +51,7 @@ const Main = () => {
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
         {introText}
+        <a className='anchor' id='tryme'/>
         <h2 className='Main__subtitle'>Try me</h2>
         <div className='code-demo'>
             <p className='code-demo__title'>JavaScript Demo: Dev.nealOverton()</p>
@@ -76,11 +80,14 @@ const Main = () => {
                 </div>
             </div>
         </div>
+        <a className='anchor' id='skills'/>
         <h2 className='Main__subtitle'>Skills</h2>
         <div className='skills-box'>
             {skillsText}
         </div>
-        <h2 className='Main__subtitle'>Projects</h2>
+        <a className='anchor' id='projects'/>
+        <h2 className='Main__subtitle' >Projects</h2>
+        <a className='anchor' id='tablehog'/>
         <h3 className='Main__project-title code-background'>Tablehog</h3>
         <p className='Main__project-text'>
             This is a React web app designed to allow users to read board game reviews. Once logged in, they are permitted on comment and vote on reviews which interest them. <br/> <br/>
@@ -89,6 +96,8 @@ const Main = () => {
             Front end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/tablehog' target={'_blank'}>https://github.com/nealoverton/tablehog</a><br/>
             Back end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/board-game-reviews' target={'_blank'}>https://github.com/nealoverton/board-game-reviews</a>
         </p>
+
+        <a className='anchor' id='meeting'/>
         <h3 className='Main__project-title code-background'>Meeting Room Booker</h3>
         <p className='Main__project-text'>
             This is a React web app developed to improve the quality of life in my partner's office. It utilises the FullCalendar library for the calendar functionality and has a Firebase back end. <br/><br/>
@@ -96,6 +105,7 @@ const Main = () => {
             Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'}>https://github.com/coramarcu/book-a-meeting</a>
         </p>
 
+        <a className='anchor' id='cavern'/>
         <h3 className='Main__project-title code-background'>Cavern of Wonder</h3>
         <p className='Main__project-text'>
             My first foray into Unity: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
@@ -104,7 +114,9 @@ const Main = () => {
 
             Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'}>https://github.com/coramarcu/book-a-meeting</a>
         </p>
+        <a className='anchor' id='experience'/>
         <h2 className='Main__subtitle'>Experience</h2>
+        <a className='anchor' id='mcrcodes'/>
         <h3 className='experience__title'>Tutor at Manchester Codes</h3>
         <p className='experience__text'>I provide lecture support and one-on-one mentoring to adults on an intensive coding bootcamp.</p>
         <div className='experience__details code-background'>
@@ -112,6 +124,7 @@ const Main = () => {
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
 
+        <a className='anchor' id='northcoders'/>
         <h3 className='experience__title'>Student on Northcoders Coding Bootcamp</h3>
         <p className='experience__text'>I studied on Northcoders' 13 week full-stack development bootcamp. This focused on Javascript, HTML, and CSS, as well as Git version control, TDD and Agile practices such as pair programming, stand ups, and kanban boards.</p>
         <div className='experience__details code-background'>
@@ -119,6 +132,7 @@ const Main = () => {
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
         </div>
 
+        <a className='anchor' id='trading'/>
         <h3 className='experience__title'>Sports Trading Consultant</h3>
         <p className='experience__text'>I monitored online gambling systems and was responsible for preventing and investigating potentially costly odds discrepancies. Working closely with the lead engineer on this project and helping out with UI design and bugfixing is what drew me towards coding.</p>
         <div className='experience__details code-background'>
