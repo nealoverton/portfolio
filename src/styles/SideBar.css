@@ -1,6 +1,6 @@
 .SideBar{
-    min-width: 20 rem;
-    max-width: 25rem;
+    min-width: 18rem;
+    max-width: 20rem;
     height: calc(100vh - 5.5rem);
     overflow-y: scroll;
     display: flex;

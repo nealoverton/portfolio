@@ -10,6 +10,13 @@
     top: 5.5rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .SectionMenu {
+      visibility: hidden;
+      position: fixed;
+    }
+  }
+
 .SectionMenu__title{
     font-size: 1.2rem;
     font-weight: 400;

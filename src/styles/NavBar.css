@@ -126,4 +126,12 @@
     font-size: 0.9rem;
     font-weight: 400;
     margin: 0.4rem;
+    width: 10rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .path-container__language {
+      visibility: hidden;
+      position: fixed;
+    }
+  }
