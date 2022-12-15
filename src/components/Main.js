@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../styles/styles.js';
+import ViewportBlock from './ViewportBlock.js';
 
-const Main = () => {
+const Main = ({setHighlightedSection}) => {
     const nealOverton = <span className='red'>nealOverton</span>
     const blockOpen = <span>&#62; &#123; &#47;</span>;
     const blockClose = <span>&#47; &#125;</span>;
@@ -47,10 +48,10 @@ const Main = () => {
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
 
-
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
         {introText}
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('tryme')}/>
         <a className='anchor' id='tryme'/>
         <h2 className='Main__subtitle'>Try me</h2>
         <div className='code-demo'>
@@ -81,11 +82,13 @@ const Main = () => {
             </div>
         </div>
         <a className='anchor' id='skills'/>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')}/>
         <h2 className='Main__subtitle'>Skills</h2>
         <div className='skills-box'>
             {skillsText}
         </div>
         <a className='anchor' id='projects'/>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
         <h2 className='Main__subtitle' >Projects</h2>
         <a className='anchor' id='tablehog'/>
         <h3 className='Main__project-title code-background'>Tablehog</h3>
@@ -108,13 +111,14 @@ const Main = () => {
         <a className='anchor' id='cavern'/>
         <h3 className='Main__project-title code-background'>Cavern of Wonder</h3>
         <p className='Main__project-text'>
-            My first foray into Unity: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
+            My first foray into Unity one weekend: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
 
             So-named because my friend's only remark when playing was "Man, how big is this cavern?".<br/><br/>
 
             Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'}>https://github.com/coramarcu/book-a-meeting</a>
         </p>
         <a className='anchor' id='experience'/>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <h2 className='Main__subtitle'>Experience</h2>
         <a className='anchor' id='mcrcodes'/>
         <h3 className='experience__title'>Tutor at Manchester Codes</h3>

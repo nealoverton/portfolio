@@ -17,11 +17,26 @@
 
 .SectionMenu__label{
     color: black;
+    width: 10rem;
     text-decoration: none;
     margin: 0rem;
     padding: 1rem;
     border-left: 2px solid var(--grey);
     font-size: 0.8rem;
+    text-align: justify;
+}
+
+.SectionMenu__label--highlighted{
+    color: black;
+    font-weight: 500;
+    width: 10rem;
+    text-decoration: none;
+    margin: 0rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: justify;
+    border-left: 2px solid var(--highlight);
+    background-color: var(--highlight-bg);
 }
 
 .SectionMenu__label:hover{
