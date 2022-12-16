@@ -15,8 +15,8 @@ const Navbar = () => {
                     <h2 className='logo__text--black'>njo dev docs</h2>
                     <h2 className='logo__text--blue'>_</h2>
                 </div>
-                <a className='info-container__link' href='https://github.com/nealoverton' target='_blank'>Github</a>
-                <a className='info-container__link' href='https://www.linkedin.com/in/neal-overton-b07027234/' target='_blank'>LinkedIn</a>
+                <a className='info-container__link' href='https://github.com/nealoverton' target='_blank' rel="noopener noreferrer">Github</a>
+                <a className='info-container__link' href='https://www.linkedin.com/in/neal-overton-b07027234/' target='_blank' rel="noopener noreferrer">LinkedIn</a>
             </div>
             
             <div className='info-container--right'>
@@ -28,7 +28,7 @@ const Navbar = () => {
         
         <div className='path-container'>
             <p className='path-container__path'>References <span className='comment'>  &#62;  </span>  <span className='path-container__path--hidable'>Javascript <span className='comment'> &#62;  </span> Standard built-in objects <span className='comment'>  &#62;  </span> Dev <span className='comment'>  &#62;  </span> </span>JDev.prototype.nealOverton()</p>
-            <p className='path-container__language'><TfiWorld/> English (UK)</p>
+            <p className='path-container__language'><TfiWorld alt='Globe icon'/> English (UK)</p>
         </div>
     </div>
 }

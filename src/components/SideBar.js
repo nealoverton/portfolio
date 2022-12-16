@@ -24,21 +24,21 @@ const SideBar = () => {
         <Link smooth to={'#languages'} className='SideBar__link'>
             <span>
                 <Tooltip title="In experimental phase" position="top">
-                    <IoFlask className='blue' id="experimental" />
+                    <IoFlask alt='blue conical flask icon' className='blue' id="experimental" />
                 </Tooltip>
             </span>Dev.prototype.C#()
         </Link>
         <Link smooth to={'#languages'} className='SideBar__link'>Dev.prototype.CSS()</Link>
         <Link smooth to={'#languages'} className='SideBar__link'>
             <Tooltip title="In experimental phase" position="top">
-                <IoFlask className='blue' id="experimental" />
+                <IoFlask alt='blue conical flask icon' className='blue' id="experimental" />
             </Tooltip>
             Dev.prototype.Dart()
         </Link>
         <Link smooth to={'#languages'} className='SideBar__link'>Dev.prototype.ES6/Node.js()</Link>
         <Link smooth to={'#frameworks'} className='SideBar__link'>
             <Tooltip title="In experimental phase" position="top">
-                <IoFlask className='blue' id="experimental" />
+                <IoFlask alt='blue conical flask icon' className='blue' id="experimental" />
             </Tooltip>
             Dev.prototype.Flutter()
         </Link>
@@ -50,7 +50,7 @@ const SideBar = () => {
         <Link smooth to={'#languages'} className='SideBar__link'>Dev.prototype.SQL()</Link>
         <Link smooth to={'#other'} className='SideBar__link'>
             <Tooltip title="In experimental phase" position="top">
-                <IoFlask className='blue' id="experimental" />
+                <IoFlask alt='blue conical flask icon' className='blue' id="experimental" />
             </Tooltip>
             Dev.prototype.Unity()
         </Link>

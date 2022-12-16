@@ -1,4 +1,5 @@
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import CavernOfWonder from './components/CavernOfWonder.js';
 import Home from './components/Home.js';
 import NavBar from './components/NavBar.js';
 import './styles/styles.js';
@@ -7,12 +8,18 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="App">
-      <NavBar/>
-      <Home/>
-    </div>
-    </HashRouter>
-    
+      <Routes>
+        <Route path='/' element={
+          <div className="App">
+          <NavBar/>
+          <Home/>
+        </div>
+        }/>
+
+        <Route path='/cavern-of-wonder' element={<CavernOfWonder/>}/>
+      </Routes>
+      
+    </HashRouter> 
   );
 }
 

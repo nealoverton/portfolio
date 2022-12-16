@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/styles.js';
 import ViewportBlock from './ViewportBlock.js';
+import { Link } from 'react-router-dom';
 
 const Main = ({setHighlightedSection}) => {
     const nealOverton = <span className='red'>nealOverton</span>
@@ -50,6 +51,7 @@ const Main = ({setHighlightedSection}) => {
     </p>;
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
+    const [isPlayingCavern, setIsPlayingCavern] = useState(false);
 
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
@@ -118,8 +120,20 @@ const Main = ({setHighlightedSection}) => {
 
             So-named because my friend's only remark when playing was "Man, how big is this cavern?".<br/><br/>
 
-            Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'}>https://github.com/coramarcu/book-a-meeting</a>
+            Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/Cavern-of-Wonder' target={'_blank'}>https://github.com/nealoverton/Cavern-of-Wonder</a>
         </p>
+        
+        <div className='cavern-link__container'>
+            <Link className='cavern-link' to={'/cavern-of-wonder'} target="_blank" rel="noopener noreferrer">
+                <button className='cavern-link__button'>
+                    Play game
+                </button>
+            </Link>
+            <p className='Main__project-text'>( desktop only, spacebar required )</p>
+        </div>
+        
+        
+        
         <a className='anchor' id='experience'/>
         <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <h2 className='Main__subtitle'>Experience</h2>

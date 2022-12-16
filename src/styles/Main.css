@@ -147,6 +147,31 @@
     text-decoration: none;
 }
 
+.cavern-link__button{
+    all: unset;
+    margin-left: 2rem;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0.2rem;
+    background-color: white;
+    border: 1px solid var(--grey);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cavern-link__button:hover{
+    background-color: var(--grey);
+}
+
+.cavern-link{
+    text-decoration: none;
+    color: black;
+}
+
+.cavern-link__container{
+    display: flex;
+}
+
 .experience__title{
     font-weight: 400;
 }
