@@ -1,4 +1,3 @@
-
 import handleViewport from 'react-in-viewport';
 
 const Block = ({ inViewport, forwardedRef }) => {

@@ -8,7 +8,9 @@ const CavernOfWonder = () => {
         codeUrl: 'build/Cavern of Wonder Webgl.wasm',
     });
 
-    return <Unity unityProvider={unityProvider} style={{ width: 900, height: 600 }} />
+    return <div className="Unity__container">
+            <Unity unityProvider={unityProvider} style={{ width: 800, height: 600, margin: 'auto', display:'block'}} className='Unity'/>
+    </div>
 }
 
 export default CavernOfWonder;

@@ -122,12 +122,14 @@
 
 .skills-box{
     background-color: var(--codegrey);
+    box-sizing: border-box;
     width: 100%;
     overflow: auto;
+    padding: 1.2rem;
 }
 
 .skills-box__text{
-    margin: 0.8rem;
+    margin: 0rem;
     text-align: justify;
     line-height: 2em;
     font-weight: 300;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/styles.js';
 import ViewportBlock from './ViewportBlock.js';
 import { Link } from 'react-router-dom';
@@ -28,7 +28,7 @@ const Main = ({setHighlightedSection}) => {
     </p>;
    
 
-    const skillsText = <p className='skills-box__text'>
+    const skillsTextStart = <p className='skills-box__text'>
         <a className='anchor' id='languages'/>
         <span className='comment'>&#47;&#47;  Languages</span><br/>
         {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} advanced knowledge, and I now tutor the use of Javascript in a Bootcamp{blockClose}
@@ -37,7 +37,9 @@ const Main = ({setHighlightedSection}) => {
         {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} ... {blockClose}
         {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} experience is limited to experimenting with Unity, but I'm having fun {blockClose}
         {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} experience is limited to experimenting with Flutter, but my Java experience means everything seems quite familiar {blockClose}
-        
+    </p>;
+
+    const skillsTextEnd = <p className='skills-box__text'>
         <a className='anchor' id='frameworks'/>
         <br/><span className='comment'>&#47;&#47;  Frameworks</span><br/>
         {nealOvertonWithBracket}<span className='blue'>React</span>{blockOpen} extensive experience, take a look at examples below (including this one) {blockClose}
@@ -48,15 +50,16 @@ const Main = ({setHighlightedSection}) => {
         <br/><span className='comment'>&#47;&#47;  Other</span><br/>
         {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} example below  {blockClose}
         {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} example below  {blockClose}
-    </p>;
+    </p>
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
-    const [isPlayingCavern, setIsPlayingCavern] = useState(false);
 
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
         {introText}
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('tryme')}/>
+        <ViewportBlock 
+            onEnterViewport={() => setHighlightedSection('tryme')}
+        />
         <a className='anchor' id='tryme'/>
         <h2 className='Main__subtitle'>Try me</h2>
         <div className='code-demo'>
@@ -87,13 +90,15 @@ const Main = ({setHighlightedSection}) => {
             </div>
         </div>
         <a className='anchor' id='skills'/>
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')}/>
+        
         <h2 className='Main__subtitle'>Skills</h2>
         <div className='skills-box'>
-            {skillsText}
+            {skillsTextStart}
+            <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
+            {skillsTextEnd}
         </div>
         <a className='anchor' id='projects'/>
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
+        
         <h2 className='Main__subtitle' >Projects</h2>
         <a className='anchor' id='tablehog'/>
         <h3 className='Main__project-title code-background'>Tablehog</h3>
@@ -104,6 +109,8 @@ const Main = ({setHighlightedSection}) => {
             Front end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/tablehog' target={'_blank'}>https://github.com/nealoverton/tablehog</a><br/>
             Back end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/board-game-reviews' target={'_blank'}>https://github.com/nealoverton/board-game-reviews</a>
         </p>
+
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
 
         <a className='anchor' id='meeting'/>
         <h3 className='Main__project-title code-background'>Meeting Room Booker</h3>
@@ -135,7 +142,6 @@ const Main = ({setHighlightedSection}) => {
         
         
         <a className='anchor' id='experience'/>
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <h2 className='Main__subtitle'>Experience</h2>
         <a className='anchor' id='mcrcodes'/>
         <h3 className='experience__title'>Tutor at Manchester Codes</h3>
@@ -144,7 +150,7 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> startDate = <span className='green'>12.2022</span>;</p>
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
-
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <a className='anchor' id='northcoders'/>
         <h3 className='experience__title'>Student on Northcoders Coding Bootcamp</h3>
         <p className='experience__text'>I studied on Northcoders' 13 week full-stack development bootcamp. This focused on Javascript, HTML, and CSS, as well as Git version control, TDD and Agile practices such as pair programming, stand ups, and kanban boards.</p>
