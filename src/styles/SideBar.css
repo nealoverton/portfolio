@@ -13,6 +13,13 @@
     top: 5.5rem;
 }
 
+@media only screen and (max-width: 910px) {
+    .SideBar{
+        visibility: hidden;
+        position: fixed;
+    }
+  }
+
 .SideBar__title{
     padding-top: 2rem;
     font-size: 1.3rem;;

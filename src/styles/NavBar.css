@@ -37,20 +37,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25rem;
+    width: 50%;
 }
 
 .info-container--right{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 16rem;
+    width: 25%
 }
 
 .info-container__question{
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+    .info-container__question {
+      visibility: hidden;
+      position: fixed;
+    }
+  }
 
 .info-container__button{
     height: 2rem;
@@ -78,6 +85,13 @@
     color: var(--highlight);
     background-color: var(--highlight-bg)
 }
+
+@media only screen and (max-width: 500px) {
+    .info-container__link {
+      visibility: hidden;
+      position: fixed;
+    }
+  }
 
 .logo{
     display: flex;
@@ -117,10 +131,13 @@
     white-space: pre-wrap;
 }
 
-.path-container__path span{
-    color: var(--grey);
-    font-weight: 500;
-}
+@media only screen and (max-width: 910px) {
+    .path-container__path--hidable{
+        visibility: hidden;
+        position: fixed;
+    }
+  }
+
 
 .path-container__language{
     font-size: 0.9rem;

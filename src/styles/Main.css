@@ -130,6 +130,7 @@
     margin: 0.8rem;
     text-align: justify;
     line-height: 2em;
+    font-weight: 300;
 }
 
 .Main__project-text{

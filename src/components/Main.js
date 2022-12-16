@@ -4,8 +4,9 @@ import ViewportBlock from './ViewportBlock.js';
 
 const Main = ({setHighlightedSection}) => {
     const nealOverton = <span className='red'>nealOverton</span>
-    const blockOpen = <span>&#62; &#123; &#47;</span>;
-    const blockClose = <span>&#47; &#125;</span>;
+    const nealOvertonWithBracket = <span><span className='red'>nealOverton</span><span className='comment'>&#40;&#40;</span></span>;
+    const blockOpen = <span className='comment'>&#41; =&#62; &#123; &#47;*</span>;
+    const blockClose = <span className='comment'>*&#47; &#125; &#41;<br/></span>;
 
     const introText = <p className='Main__intro'>
         <span className='code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
@@ -29,21 +30,23 @@ const Main = ({setHighlightedSection}) => {
     const skillsText = <p className='skills-box__text'>
         <a className='anchor' id='languages'/>
         <span className='comment'>&#47;&#47;  Languages</span><br/>
-        {nealOverton}((<span className='blue'>JavaScriptES6</span>, <span className='blue'>Node.js</span>) ={blockOpen}* advanced, used throughout bootcamp and beyond *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>Java</span>) ={blockOpen}* self-taught up to advanced concepts like interfaces and generics*{blockClose})<br/>
-        {nealOverton}((<span className='blue'>HTML</span>) ={blockOpen}* ... *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>CSS</span>) ={blockOpen}* ... *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>C#</span>) ={blockOpen}* experience is limited to experimenting with Unity, but I'm having fun *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>Dart</span>) ={blockOpen}* experience is limited to experimenting with Flutter, but my Java experience means everything seems quite familiar *{blockClose})<br/>
+        {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} advanced knowledge, and I now tutor the use of Javascript in a Bootcamp{blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to advanced concepts like interfaces and generics{blockClose}
+        {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} ... {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} ... {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} experience is limited to experimenting with Unity, but I'm having fun {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} experience is limited to experimenting with Flutter, but my Java experience means everything seems quite familiar {blockClose}
+        
         <a className='anchor' id='frameworks'/>
         <br/><span className='comment'>&#47;&#47;  Frameworks</span><br/>
-        {nealOverton}((<span className='blue'>React</span>) ={blockOpen}* extensive experience, take a look at examples below (including this one) *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>Jest</span>) ={blockOpen}* well-versed in TDD including spies and mock functions *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>Flutter</span>) ={blockOpen}* experimented with some basic apps, love how the layout and styling is done right there as you place the widget *{blockClose})<br/>
+        {nealOvertonWithBracket}<span className='blue'>React</span>{blockOpen} extensive experience, take a look at examples below (including this one) {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Jest</span>{blockOpen} well-versed in TDD including spies and mock functions {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps, love how the layout and styling is done right there as you place the widget {blockClose}
+
         <a className='anchor' id='other'/>
         <br/><span className='comment'>&#47;&#47;  Other</span><br/>
-        {nealOverton}((<span className='blue'>PostgreSQL</span>) ={blockOpen}* example below *{blockClose})<br/>
-        {nealOverton}((<span className='blue'>Unity</span>) ={blockOpen}* example below *{blockClose})<br/>
+        {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} example below  {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} example below  {blockClose}
     </p>;
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
