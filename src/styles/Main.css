@@ -141,6 +141,11 @@
     font-weight: 300;
 }
 
+.Main__project__img{
+    width: 30rem;
+    align-self: center;
+}
+
 .Main__project-text__link{
     color: var(--blue);
 }

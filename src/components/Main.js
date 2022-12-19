@@ -93,6 +93,7 @@ const Main = ({setHighlightedSection}) => {
         
         <h2 className='Main__subtitle'>Skills</h2>
         <div className='skills-box'>
+            <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
             {skillsTextStart}
             <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
             {skillsTextEnd}
@@ -102,11 +103,16 @@ const Main = ({setHighlightedSection}) => {
         <h2 className='Main__subtitle' >Projects</h2>
         <a className='anchor' id='tablehog'/>
         <h3 className='Main__project-title code-background'>Tablehog</h3>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
+        <img src='tablehog-screenshot.png' className='Main__project__img' alt='Screenshot of tablehog website'/>
+        <img src='api-screenshot.png' className='Main__project__img' alt='Screenshot of JSON output of board game reviews API'/>
         <p className='Main__project-text'>
             This is a React web app designed to allow users to read board game reviews. Once logged in, they are permitted on comment and vote on reviews which interest them. <br/> <br/>
             The back end is a REST API comprising an Express server and a psql database. This was written using TDD and utilises an automated test and deployment pipeline achieved through Github Actions.<br/> <br/>
 
-            Front end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/tablehog' target={'_blank'}>https://github.com/nealoverton/tablehog</a><br/>
+            Live site: <a className='Main__project-text__link' href='https://tablehog.netlify.app/' target={'_blank'}>https://tablehog.netlify.app/</a><br/><br/>
+            Live API: <a className='Main__project-text__link' href='https://board-game-reviews.onrender.com/api' target={'_blank'}>https://board-game-reviews.onrender.com/api</a><br/><br/>
+            Front end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/tablehog' target={'_blank'}>https://github.com/nealoverton/tablehog</a><br/><br/>
             Back end Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/board-game-reviews' target={'_blank'}>https://github.com/nealoverton/board-game-reviews</a>
         </p>
 
@@ -114,14 +120,16 @@ const Main = ({setHighlightedSection}) => {
 
         <a className='anchor' id='meeting'/>
         <h3 className='Main__project-title code-background'>Meeting Room Booker</h3>
+        <img src='meeting-screenshot.png' className='Main__project__img' alt='Screenshot of calendar from meeting room booking app'/>
         <p className='Main__project-text'>
             This is a React web app developed to improve the quality of life in my partner's office. It utilises the FullCalendar library for the calendar functionality and has a Firebase back end. <br/><br/>
 
             Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'}>https://github.com/coramarcu/book-a-meeting</a>
         </p>
-
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
         <a className='anchor' id='cavern'/>
         <h3 className='Main__project-title code-background'>Cavern of Wonder</h3>
+        <img src='cavern-screenshot.png' className='Main__project__img' alt='Screenshot of hot air balloon and rocky obstacles from cavern of wonder game'/>
         <p className='Main__project-text'>
             My first foray into Unity one weekend: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
 
@@ -150,7 +158,6 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> startDate = <span className='green'>12.2022</span>;</p>
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <a className='anchor' id='northcoders'/>
         <h3 className='experience__title'>Student on Northcoders Coding Bootcamp</h3>
         <p className='experience__text'>I studied on Northcoders' 13 week full-stack development bootcamp. This focused on Javascript, HTML, and CSS, as well as Git version control, TDD and Agile practices such as pair programming, stand ups, and kanban boards.</p>
@@ -158,7 +165,7 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> startDate = <span className='green'>11.2021</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
         </div>
-
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <a className='anchor' id='trading'/>
         <h3 className='experience__title'>Sports Trading Consultant</h3>
         <p className='experience__text'>I monitored online gambling systems and was responsible for preventing and investigating potentially costly odds discrepancies. Working closely with the lead engineer on this project and helping out with UI design and bugfixing is what drew me towards coding.</p>
@@ -167,6 +174,7 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> endDate = <span className='green'>11.2022</span>;</p>
             <p>console.<span className='red'>log</span>(status);  <span className='comment'>&#47;&#47;  self-employed</span></p>
         </div>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
     </div>
 }
 
