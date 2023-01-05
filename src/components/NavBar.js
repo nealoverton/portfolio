@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         
         <div className='path-container'>
-            <p className='path-container__path'>References <span className='comment'>  &#62;  </span>  <span className='path-container__path--hidable'>Javascript <span className='comment'> &#62;  </span> Standard built-in objects <span className='comment'>  &#62;  </span> Dev <span className='comment'>  &#62;  </span> </span>JDev.prototype.nealOverton()</p>
+            <p className='path-container__path'>References <span className='comment'>  &#62;  </span>  <span className='path-container__path--hidable'>Javascript <span className='comment'> &#62;  </span> Standard built-in objects <span className='comment'>  &#62;  </span> Dev <span className='comment'>  &#62;  </span> </span>Dev.prototype.nealOverton()</p>
             <p className='path-container__language'><TfiWorld alt='Globe icon'/> English (UK)</p>
         </div>
     </div>
