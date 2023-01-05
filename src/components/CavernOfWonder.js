@@ -1,4 +1,5 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
+import '../styles/styles.js';
 
 const CavernOfWonder = () => {
     const { unityProvider } = new useUnityContext({
@@ -9,7 +10,7 @@ const CavernOfWonder = () => {
     });
 
     return <div className="Unity__container">
-            <Unity unityProvider={unityProvider} style={{ width: 800, height: 600,  margin: 'auto', display:'block'}} className='Unity'/>
+            <Unity unityProvider={unityProvider} style={{ width: 800, height: 500,  margin: 'auto', display:'block'}} className='Unity'/>
     </div>
 }
 
