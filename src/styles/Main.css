@@ -53,19 +53,25 @@
 
 .skills-box__text{
     margin: 0rem;
-    text-align: justify;
+    text-align: left;
     line-height: 2em;
     font-weight: 300;
 }
 
 .Main__project-text{
-    margin-left: 2rem;
-    text-align: justify;
+    text-align: left;
     font-weight: 300;
 }
 
+.Main__project-text-container{
+    padding-left: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .Main__project__img{
-    width: 30rem;
+    width: 100%;
+    max-width: 40rem;
     align-self: center;
 }
 
@@ -79,7 +85,7 @@
 
 .cavern-link__button{
     all: unset;
-    margin-left: 2rem;
+    margin: 0rem 2rem;
     height: 3rem;
     width: 7rem;
     border-radius: 0.2rem;
@@ -102,20 +108,36 @@
     display: flex;
 }
 
+@media only screen and (max-width: 400px) {
+    .cavern-link__container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cavern-link__container p{
+        text-align: center;
+    }
+
+    .cavern-link__button{
+        margin: 0rem;  
+    }
+  }
+
 .experience__title{
     font-weight: 400;
+    text-align: left;
+    margin: 2rem 0rem 0rem;
 }
 
 .experience__text{
     font-weight: 300;
-    text-align: justify;
+    text-align: left;
 }
 
 .experience__details{
     width: 100%;
-    text-align: justify;
-    padding: 0rem 1rem;
-    margin-bottom: 3rem;
+    text-align: left;
 }
 
 .anchor{

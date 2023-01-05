@@ -4,7 +4,7 @@ const CodeDemo = () => {
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
 
-    const codeDemoText = <p className='code-demo__body__code-field__text'>
+    const codeDemoText = <p>
         <span className='comment'>&#47;&#47;  create a new instance of Dev</span><br/>
         <span className='blue'>const</span> newDev = new <span className='red'>Dev</span>();<br/><br/>
         <span className='comment'>&#47;&#47;  call .nealOverton() with valid start date</span><br/>
