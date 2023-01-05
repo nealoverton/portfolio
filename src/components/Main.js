@@ -31,22 +31,22 @@ const Main = ({setHighlightedSection}) => {
     const skillsTextStart = <p className='skills-box__text'>
         <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
         {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} I tutor bootcamp students in the fundamentals of coding as well as the functional and object-oriented programming paradigms usinsg JavaScript{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to advanced concepts like interfaces and generics{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} can keep things semantic and accessible {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen}  {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to concepts like interfaces and generics, I have a solid foundation{blockClose}
+        {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} striving to keep things semantic and accessible {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} test my responsiveness in the console{blockClose}
         {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} experience is limited to experimenting with Unity, but I'm having fun {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} experience is limited to experimenting with Flutter, but my Java experience means everything seems quite familiar {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} experience is limited to experimenting with Flutter, but my battles with null safety have been legendary {blockClose}
     </p>;
 
     const skillsTextEnd = <p className='skills-box__text'>
         <br/><span id='frameworks' className='comment'>&#47;&#47;  Frameworks</span><br/>
         {nealOvertonWithBracket}<span className='blue'>React</span>{blockOpen} extensive experience, take a look at examples below (including this one) {blockClose}
         {nealOvertonWithBracket}<span className='blue'>Jest</span>{blockOpen} well-versed in TDD including spies and mock functions {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps, love how the layout and styling is done right there as you place the widget {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps. I like how the layout is determined as the widgets are placed, it's like Lego. {blockClose}
 
         <br/><span id='other' className='comment'>&#47;&#47;  Other</span><br/>
-        {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} example below  {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} example below  {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} check out the Tablehog API below, which uses a psql database {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} I've been enjoying learning by making some simple games, check out my first attempt, Cavern of Wonder, below {blockClose}
     </p>
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
@@ -100,8 +100,8 @@ const Main = ({setHighlightedSection}) => {
         <img src='tablehog-screenshot.png' className='Main__project__img' alt='Screenshot of tablehog website'/>
         <img src='api-screenshot.png' className='Main__project__img' alt='Screenshot of JSON output of board game reviews API'/>
         <p className='Main__project-text'>
-            This is a React web app designed to allow users to read board game reviews. Once logged in, they are permitted on comment and vote on reviews which interest them. <br/> <br/>
-            The back end is a REST API comprising an Express server and a psql database. This was written using TDD and utilises an automated test and deployment pipeline achieved through Github Actions.<br/> <br/>
+            A React web app designed to allow users to read board game reviews. Once logged in, they are permitted on comment and vote on reviews which interest them. <br/> <br/>
+            The back end is a REST API comprising an Express server and a psql database. This was written using TDD and uses Github Actions to implement a CI/CD pipeline.<br/> <br/>
 
             Live site: <a className='Main__project-text__link' href='https://tablehog.netlify.app/' target={'_blank'} rel='noreferrer'>https://tablehog.netlify.app/</a><br/><br/>
             Live API: <a className='Main__project-text__link' href='https://board-game-reviews.onrender.com/api' target={'_blank'} rel='noreferrer'>https://board-game-reviews.onrender.com/api</a><br/><br/>
@@ -114,7 +114,7 @@ const Main = ({setHighlightedSection}) => {
         <h3 className='Main__project-title code-background' id='meeting'>Meeting Room Booker</h3>
         <img src='meeting-screenshot.png' className='Main__project__img' alt='Screenshot of calendar from meeting room booking app'/>
         <p className='Main__project-text'>
-            This is a React web app developed to improve the quality of life in my partner's office. It utilises the FullCalendar library for the calendar functionality and Firebase for the back end. <br/><br/>
+            A React web app developed to improve the quality of life in my partner's office. It utilises the FullCalendar library for the calendar functionality and Firebase for the back end. <br/><br/>
 
             Github repo: <a className='Main__project-text__link' href='https://github.com/coramarcu/book-a-meeting' target={'_blank'} rel='noreferrer'>https://github.com/coramarcu/book-a-meeting</a>
         </p>
