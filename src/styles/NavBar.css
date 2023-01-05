@@ -53,10 +53,9 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     .info-container__question {
-      visibility: hidden;
-      position: fixed;
+        display: none;
     }
   }
 
@@ -88,10 +87,9 @@
     background-color: var(--highlight-bg)
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
     .info-container__link {
-      visibility: hidden;
-      position: fixed;
+      display: none;
     }
   }
 
@@ -140,8 +138,7 @@
 
 @media only screen and (max-width: 910px) {
     .path-container__path--hidable{
-        visibility: hidden;
-        position: fixed;
+        display: none;
     }
   }
 
@@ -155,7 +152,6 @@
 
 @media only screen and (max-width: 600px) {
     .path-container__language {
-      visibility: hidden;
-      position: fixed;
+        display: none;
     }
   }

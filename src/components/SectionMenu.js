@@ -1,5 +1,6 @@
 import '../styles/styles.js';
 import { HashLink as Link } from 'react-router-hash-link';
+import { scrollWithOffset } from '../utilities/scroll.js';
 
 
 const SectionMenu = ({highlightedSection}) => {
@@ -10,10 +11,10 @@ const SectionMenu = ({highlightedSection}) => {
 
     return <div className='SectionMenu'>
         <h2 className='SectionMenu__title'>In this page</h2>
-        <Link smooth to={'#tryme'} className={tryMeClassName}>Try Me</Link>
-        <Link smooth to={'#skills'} className={skillsClassName}>Skills</Link>
-        <Link smooth to={'#projects'} className={projectsClassName}>Projects</Link>
-        <Link smooth to={'#experience'} className={experienceClassName}>Experience</Link>
+        <Link smooth to={'#tryme'} scroll={el => scrollWithOffset(el)} className={tryMeClassName}>Try Me</Link>
+        <Link smooth to={'#skills'} scroll={el => scrollWithOffset(el)} className={skillsClassName}>Skills</Link>
+        <Link smooth to={'#projects'} scroll={el => scrollWithOffset(el)} className={projectsClassName}>Projects</Link>
+        <Link smooth to={'#experience'} scroll={el => scrollWithOffset(el)} className={experienceClassName}>Experience</Link>
     </div>
 }
 
