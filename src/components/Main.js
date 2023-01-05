@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import '../styles/styles.js';
+import CodeDemo from './CodeDemo.js';
 import ViewportBlock from './ViewportBlock.js';
-import { Link } from 'react-router-dom';
 
 const Main = ({setHighlightedSection}) => {
     const nealOverton = <span className='red'>nealOverton</span>
@@ -13,29 +12,14 @@ const Main = ({setHighlightedSection}) => {
         <span className='code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
     </p>
 
-    const codeDemoText = <p>
-        <span className='comment'>&#47;&#47;  create a new instance of Dev</span><br/>
-        <span className='blue'>const</span> newDev = new <span className='red'>Dev</span>();<br/><br/>
-        <span className='comment'>&#47;&#47;  call .nealOverton() with valid start date</span><br/>
-        <span className='blue'>const</span> data = newDev.{nealOverton}(<span className='green'>2019</span>);<br/><br/>
-        console.<span className='red'>log</span>(data);<br/>
-        <span className='comment'>&#47;&#47;  expected output: data specific to Neal Overton</span><br/>
-    </p>
-    
-    const outputText =  <p className='code-demo__output-row__output-text'>
-        &#62; I started teaching myself Java in late 2019 using online resources. Yes, that was an intense place to start and yes, I could write an abstract class before I could make a simple static web page.<br/>
-        I loved it though and completing the Northcoders Coding Bootcamp in 2022 gave me a more rounded set of skills. Take a look below for more details.
-    </p>;
-   
-
     const skillsTextStart = <p className='skills-box__text'>
         <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
         {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} I tutor bootcamp students in the fundamentals of coding as well as the functional and object-oriented programming paradigms usinsg JavaScript{blockClose}
         {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to concepts like interfaces and generics, I have a solid foundation{blockClose}
         {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} striving to keep things semantic and accessible {blockClose}
         {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} test my responsiveness in the console{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} experience is limited to experimenting with Unity, but I'm having fun {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} experience is limited to experimenting with Flutter, but my battles with null safety have been legendary {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} some experience writing Unity scripts{blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} some experience building simple Flutter apps {blockClose}
     </p>;
 
     const skillsTextEnd = <p className='skills-box__text'>
@@ -49,7 +33,6 @@ const Main = ({setHighlightedSection}) => {
         {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} I've been enjoying learning by making some simple games, check out my first attempt, Cavern of Wonder, below {blockClose}
     </p>
 
-    const [outputIsVisible, setOutputIsVisible] = useState(false);
 
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
@@ -58,43 +41,18 @@ const Main = ({setHighlightedSection}) => {
             onEnterViewport={() => setHighlightedSection('tryme')}
         />
         <h2 className='Main__subtitle' id='tryme'>Try me</h2>
-        <div className='code-demo'>
-            <p className='code-demo__title'>JavaScript Demo: Dev.nealOverton()</p>
-            <div className='code-demo__body'>
-                <div className='code-demo__body__number-column'>
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                    <p>6</p>
-                    <p>7</p>
-                    <p>8</p>
-                </div>
-                <div className='code-demo__body__code-field'>
-                    {codeDemoText}
-                </div>
-            </div>
-            <div className='code-demo__output-row'>
-                <div className='code-demo__output-row__button-column'>
-                    <button className='code-demo__output-row__button' onClick={() => setOutputIsVisible(true)}>Run &#62;</button>
-                    <button className='code-demo__output-row__button' onClick={() => setOutputIsVisible(false)}>Reset</button>
-                </div>
-                <div className='code-demo__output-row__output-box'>
-                    {outputIsVisible ? outputText : <></>}
-                </div>
-            </div>
-        </div>
         
-        <h2 className='Main__subtitle' id='skills'>Skills</h2>
+        <CodeDemo/>
+        
+        {/* <h2 className='Main__subtitle' id='skills'>Skills</h2>
         <div className='skills-box'>
             <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
             {skillsTextStart}
             <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
             {skillsTextEnd}
-        </div>
+        </div> */}
         
-        <h2 className='Main__subtitle' id='projects' >Projects</h2>
+        {/* <h2 className='Main__subtitle' id='projects' >Projects</h2>
         <h3 className='Main__project-title code-background' id='tablehog'>Tablehog</h3>
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
         <img src='tablehog-screenshot.png' className='Main__project__img' alt='Screenshot of tablehog website'/>
@@ -136,10 +94,10 @@ const Main = ({setHighlightedSection}) => {
                 </button>
             </Link>
             <p className='Main__project-text'>( desktop only, spacebar required )</p>
-        </div>
+        </div> */}
         
         
-        <h2 className='Main__subtitle' id='experience'>Experience</h2>
+        {/* <h2 className='Main__subtitle' id='experience'>Experience</h2>
         <h3 className='experience__title' id='mcrcodes'>Tutor at Command Shift (formerly Manchester Codes)</h3>
         <p className='experience__text'>I provide lecture support and one-on-one mentoring to adults on an intensive coding bootcamp.</p>
         <div className='experience__details code-background'>
@@ -160,7 +118,7 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> endDate = <span className='green'>11.2022</span>;</p>
             <p>console.<span className='red'>log</span>(status);  <span className='comment'>&#47;&#47;  self-employed</span></p>
         </div>
-        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/> */}
     </div>
 }
 

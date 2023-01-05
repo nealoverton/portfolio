@@ -1,0 +1,116 @@
+.code-demo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.code-demo__title{
+    border: 1px solid var(--grey);
+    margin: 0rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
+    text-align: justify;
+}
+
+.code-demo__body{
+    height: 15rem;
+    border-bottom: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    display: flex;
+    border-radius: 0rem 0rem 0.2rem 0.2rem;
+}
+
+.code-demo__body__code-field{
+    overflow-x: auto;
+    line-height: 2rem;
+    white-space: pre;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.code-demo__body__code-field p{
+    min-width: 22rem;
+    margin: 0.1rem;
+    line-height: 1.5rem;
+    font-weight: 350;
+    overflow-x: auto;
+}
+
+.code-demo__body__number-column{
+    width: 2rem;
+    background-color: var(--lightgrey);
+    border-right: 1px solid var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0.5rem;
+}
+
+.code-demo__body__number-column p{
+    margin: 0.1rem;
+    font-weight: 350;
+}
+
+.code-demo__output-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-demo__output-row__button-column{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+
+.code-demo__output-row__button{
+    all: unset;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    background-color: white;
+    border: 1px solid var(--grey);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+    .code-demo__output-row{
+        flex-direction: column;
+    }
+
+    .code-demo__output-row__button-column{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .code-demo__output-row__button{
+        width: 6rem;
+        margin-right: 0rem;
+    }
+  }
+
+.code-demo__output-row__button:hover{
+    background-color: var(--grey);
+}
+
+.code-demo__output-row__output-box{
+    width: 100%;
+    min-height: 10rem;
+    overflow: auto;
+    background-color: var(--lightgrey);
+    border: 1px solid var(--grey);
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.code-demo__output-row__output-text{
+    text-align: justify;
+    margin: 0.6rem;
+    font-weight: 350;
+    line-height: 1.5rem;
+}
