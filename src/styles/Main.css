@@ -6,6 +6,8 @@
     max-width: 50rem;
     padding: 1rem 3rem 3rem 3rem;
     box-sizing: border-box;
+
+    background-color: aqua;
 }
 
 .Main__title{
@@ -139,6 +141,7 @@
     width: 100%;
     text-align: left;
     padding-left: 1rem;
+    box-sizing: border-box;
 }
 
 .anchor{
