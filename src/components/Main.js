@@ -108,10 +108,7 @@ const Main = ({setHighlightedSection}) => {
                 </Link>
                 <p className='Main__project-text'>( desktop only, spacebar required )</p>
             </div>
-        
-        
-        
-        
+
         
         <h2 className='Main__subtitle' id='experience'>Experience</h2>
         <h3 className='experience__title' id='mcrcodes'>Tutor at Command Shift (formerly Manchester Codes)</h3>
