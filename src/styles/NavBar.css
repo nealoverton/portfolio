@@ -2,18 +2,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 5.5rem;
     width: 100%;
     background-color: white;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 
 .Navbar__full-width-banner{
-    height: 1.9rem;
+    height: 2rem;
     width: 800rem;
     background-color: var(--lightgrey);
     border-top: 1px solid var(--grey);
@@ -135,6 +134,10 @@
     padding: 0rem 0.6rem;
 }
 
+.path-separater{
+    display: flex;
+}
+
 .path-container__path {
     margin: 0.4rem;
     font-weight: 300;
@@ -165,4 +168,90 @@
     .path-container__language {
         display: none;
     }
+  }
+
+  
+.Navbar__hamburger {
+    display: none;
+}
+
+.hamburger-menu--hidden{
+    display: none;
+}
+
+.hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger__link{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.hamburger__link:hover{
+    color: var(--highlight);
+    background-color: var(--highlight-bg)
+}
+
+@media only screen and (max-width: 770px) {
+    .info-container--right{
+        display: none;
+    }
+
+    .info-container__link {
+        display: none;
+    }
+
+    .Navbar__hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        background-color: white;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+    .Navbar__hamburger:hover {
+       background-color: var(--grey);
+    }
+
+    .Navbar__full-width-banner{
+        display: none;
+    }
+
+  }
+
+  .path-container__SideBar-icon{
+    display: none;
+  }
+
+  @media only screen and (max-width: 910px) {
+    .path-container__SideBar-icon{
+        all: unset;
+        height: 100%;
+        width: 1.8rem;
+        border-right: 1px solid var(--grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .path-container__SideBar-icon:hover{
+        background-color: var(--grey);
+      }
+
+      .path-container{
+        padding-left: 0rem;
+      }
+
   }

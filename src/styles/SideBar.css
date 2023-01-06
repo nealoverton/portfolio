@@ -15,8 +15,7 @@
 
 @media only screen and (max-width: 910px) {
     .SideBar{
-        visibility: hidden;
-        position: fixed;
+        display: none;
     }
   }
 

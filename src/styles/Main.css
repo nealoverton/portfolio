@@ -71,7 +71,6 @@
 
 .Main__project__img{
     width: 100%;
-    max-width: 40rem;
     align-self: center;
 }
 
@@ -147,4 +146,5 @@
     top: -6rem; 
     visibility: hidden;
 }
+
 

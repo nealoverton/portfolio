@@ -4,12 +4,13 @@ import SectionMenu from './SectionMenu.js';
 import Main from './Main.js';
 import { useState } from 'react';
 
-const Home = () => {
+const Home = ({sideBarDropDownIsOpen}) => {
     const [highlightedSection, setHighlightedSection] = useState('experience');
 
     return <div className='Home'>
         <SideBar/>
-        <Main setHighlightedSection={setHighlightedSection}/>
+        <div className={sideBarDropDownIsOpen ? 'SideBar-dropdown' : 'hidden'}></div>
+        <Main setHighlightedSection={setHighlightedSection} sideBarDropDownIsOpen={sideBarDropDownIsOpen}/>
         <SectionMenu highlightedSection={highlightedSection}/>
     </div>
 
