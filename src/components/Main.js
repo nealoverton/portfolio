@@ -1,10 +1,8 @@
-import '../styles/styles.js';
 import CodeDemo from './CodeDemo.js';
 import ViewportBlock from './ViewportBlock.js';
 import { Link } from 'react-router-dom';
 
 const Main = ({setHighlightedSection}) => {
-    const nealOverton = <span className='red'>nealOverton</span>
     const nealOvertonWithBracket = <span><span className='red'>nealOverton</span><span className='comment'>&#40;&#40;</span></span>;
     const blockOpen = <span className='comment'>&#41; =&#62; &#123; &#47;*</span>;
     const blockClose = <span className='comment'>*&#47; &#125; &#41;<br/></span>;

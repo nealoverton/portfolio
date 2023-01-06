@@ -1,12 +1,19 @@
-import '../styles/styles.js';
 import { TfiWorld } from 'react-icons/tfi';
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { BsLayoutTextSidebar } from "react-icons/bs";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = ({sideBarDropDownIsOpen, setSideBarDropDownIsOpen}) => {
-    const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false)
-    // const [sideBarDropdownIsOpen, setSideBarDropdownIsOpen] = useState(false);
+    const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
+
+    useEffect(() => {
+        if(sideBarDropDownIsOpen){
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+        
+    }, [sideBarDropDownIsOpen])
 
     const handleEmail = () => {
         window.location.href = "mailto:nealjoverton@gmail.com";

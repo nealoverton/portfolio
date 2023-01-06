@@ -1,17 +1,18 @@
-import '../styles/styles.js';
 import { IoFlask, IoCaretDown, IoCaretForward } from 'react-icons/io5';
 import { Tooltip } from 'react-tippy';
 import 'react-tippy/dist/tippy.css'
 import { HashLink as Link } from 'react-router-hash-link';
 import { useState } from 'react';
 import { scrollWithOffset } from '../utilities/scroll.js';
+import SectionMenu from "./SectionMenu";
 
-const SideBar = () => {
+const SideBar = ({ isResponsive = true, highlightedSection }) => {
     const [skillListIsOpen, setSkillListIsOpen] = useState(true);
     const [projectListIsOpen, setProjectListIsOpen] = useState(true);
     const [experienceListIsOpen, setExperienceListIsOpen] = useState(true);
 
-    return <div className='SideBar'>
+    return <nav className={isResponsive ? 'SideBar responsive' : 'SideBar'}>
+        {isResponsive ? <></> : <SectionMenu isResponsive={false} highlightedSection={highlightedSection}/>}
         <h2 className='SideBar__title'>Related Topics</h2>
         <h3 className='SideBar__subtitle' onClick={()=>setSkillListIsOpen(!skillListIsOpen)}>
             {skillListIsOpen ?
@@ -84,7 +85,7 @@ const SideBar = () => {
             <Link smooth to={'#mcrcodes'} scroll={el => scrollWithOffset(el)} className='SideBar__link'>Dev.prototype.tutorCommandShift()</Link>
         </div>
         
-    </div>
+    </nav>
 }
 
 export default SideBar;

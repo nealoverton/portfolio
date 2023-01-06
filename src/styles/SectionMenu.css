@@ -4,20 +4,23 @@
     align-items: flex-start;
     width: 15rem;
     height: 50%;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.responsive{
     position: -webkit-sticky;
     position: sticky;
     top: 5.5rem;
 }
 
 @media only screen and (max-width: 1200px) {
-    .SectionMenu {
-      visibility: hidden;
-      position: fixed;
+    .responsive{
+        display: none;
     }
   }
 
 .SectionMenu__title{
+    padding-top: 2rem;;
     font-size: 1.2rem;
     font-weight: 400;
 }

@@ -15,7 +15,7 @@ function App() {
         <Route path='/' element={
           <div className="App">
           <NavBar sideBarDropDownIsOpen={sideBarDropDownIsOpen} setSideBarDropDownIsOpen={setSideBarDropDownIsOpen}/>
-          <Home sideBarDropDownIsOpen={sideBarDropDownIsOpen}/>
+          <Home sideBarDropDownIsOpen={sideBarDropDownIsOpen} setSideBarDropDownIsOpen={setSideBarDropDownIsOpen}/>
         </div>
         }/>
 

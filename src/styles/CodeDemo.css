@@ -113,4 +113,12 @@
     margin: 0.6rem;
     font-weight: 350;
     line-height: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.code-demo__output-row__output-text.visible{
+    visibility: visible;
+    transition: visibility 1s, opacity 0.2s linear;
+    opacity: 1;
 }
