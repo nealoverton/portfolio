@@ -13,10 +13,29 @@
     font-weight: 500;
     width: 100%;
     margin: 0px;
+    text-align: left;
+}
+
+.Main__intro{
+    text-align: left;
+    line-height: 1.8rem;
+
+    font-weight: 300;
+}
+
+.Main__subtitle{
+    font-size: 2rem;
+    font-weight: 450;
+    padding: 0px;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 @media only screen and (max-width: 910px) {
     .Main__title{
+        font-size: 2rem;
+    }
+
+    .Main__subtitle{
         font-size: 2rem;
     }
   }
@@ -29,19 +48,11 @@
     .Main__title{
         font-size: 1.5rem;
     }
+
+    .Main__subtitle{
+        font-size: 1.5rem;
+    }
   }
-
-.Main__intro{
-    text-align: left;
-    line-height: 1.8rem;
-
-    font-weight: 300;
-}
-
-.Main__subtitle{
-    font-size: 2rem;
-    font-weight: 450;
-}
 
 .skills-box{
     background-color: var(--codegrey);
@@ -49,6 +60,7 @@
     width: 100%;
     overflow: auto;
     padding: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .skills-box__text{
@@ -105,6 +117,7 @@
 
 .cavern-link__container{
     display: flex;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -126,7 +139,7 @@
 .experience__title{
     font-weight: 400;
     text-align: left;
-    margin: 2rem 0rem 0rem;
+    margin: 1rem 0rem 0rem;
 }
 
 .experience__text{
@@ -139,6 +152,7 @@
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 .anchor{
