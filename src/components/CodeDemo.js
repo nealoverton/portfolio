@@ -3,15 +3,6 @@ import { useState } from 'react';
 const CodeDemo = () => {
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
-
-    const codeDemoText = <p>
-        <span className='comment'>&#47;&#47;  create a new instance of Dev</span><br/>
-        <span className='blue'>const</span> newDev = new <span className='red'>Dev</span>();<br/><br/>
-        <span className='comment'>&#47;&#47;  call .nealOverton() with valid start date</span><br/>
-        <span className='blue'>const</span> data = newDev.<span className='red'>nealOverton</span>(<span className='green'>2019</span>);<br/><br/>
-        console.<span className='red'>log</span>(data);<br/>
-        <span className='comment'>&#47;&#47;  expected output: data specific to Neal Overton</span><br/>
-    </p>
     
     const outputText =  <p className={outputIsVisible ? 'code-demo__output-row__output-text visible' : 'code-demo__output-row__output-text'}>
         &#62; I started teaching myself Java in late 2019 using online resources. Yes, that was an intense place to start and yes, I could write an abstract class before I could make a simple static web page.<br/>
@@ -33,7 +24,14 @@ const CodeDemo = () => {
                     <p>8</p>
                 </div>
                 <div className='code-demo__body__code-field'>
-                    {codeDemoText}
+                    <p><span className='comment'>&#47;&#47;  create a new instance of Dev</span></p>
+                    <p><span className='blue'>const</span> newDev = new <span className='red'>Dev</span>();</p>
+                    <p> </p>
+                    <p><span className='comment'>&#47;&#47;  call .nealOverton() with valid start date</span></p>
+                    <p><span className='blue'>const</span> data = newDev.<span className='red'>nealOverton</span>(<span className='green'>2019</span>);</p>
+                    <p> </p>
+                    <p>console.<span className='red'>log</span>(data);</p>
+                    <p><span className='comment'>&#47;&#47;  expected output: data specific to Neal Overton</span></p>
                 </div>
             </div>
             <div className='code-demo__output-row'>
