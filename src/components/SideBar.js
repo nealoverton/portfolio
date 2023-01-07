@@ -12,7 +12,7 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
     const [experienceListIsOpen, setExperienceListIsOpen] = useState(true);
 
     return <nav className={isResponsive ? 'SideBar responsive' : 'SideBar'}>
-        {isResponsive ? <></> : <SectionMenu isResponsive={false} highlightedSection={highlightedSection}/>}
+        <SectionMenu isResponsive={false} highlightedSection={highlightedSection}/>
         <h2 className='SideBar__title'>Related Topics</h2>
         <h3 className='SideBar__subtitle' onClick={()=>setSkillListIsOpen(!skillListIsOpen)}>
             {skillListIsOpen ?

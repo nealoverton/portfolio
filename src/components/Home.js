@@ -8,7 +8,7 @@ const Home = ({sideBarDropDownIsOpen, setSideBarDropDownIsOpen}) => {
     const [highlightedSection, setHighlightedSection] = useState('experience');
 
     return <div className='Home'>
-        <SideBar/>
+        <SideBar highlightedSection={highlightedSection}/>
         <SideBarDropDown sideBarDropDownIsOpen={sideBarDropDownIsOpen}setSideBarDropDownIsOpen={setSideBarDropDownIsOpen} highlightedSection={highlightedSection}/>
         <Main setHighlightedSection={setHighlightedSection} sideBarDropDownIsOpen={sideBarDropDownIsOpen}/>
         <SectionMenu highlightedSection={highlightedSection} />

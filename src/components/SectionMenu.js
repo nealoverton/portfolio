@@ -8,7 +8,7 @@ const SectionMenu = ({highlightedSection, isResponsive = true}) => {
     const projectsClassName = 'SectionMenu__label' + (highlightedSection === 'projects' ? '--highlighted' : '');
     const experienceClassName = 'SectionMenu__label' + (highlightedSection === 'experience' ? '--highlighted' : '');
 
-    return <nav className={isResponsive ? 'SectionMenu responsive' : 'SectionMenu'}>
+    return <nav className={'SectionMenu ' + (isResponsive ? 'responsive' : 'static')}>
         <h2 className='SectionMenu__title'>In this page</h2>
         <Link smooth to={'#tryme'} scroll={el => scrollWithOffset(el)} className={tryMeClassName}>Try Me</Link>
         <Link smooth to={'#skills'} scroll={el => scrollWithOffset(el)} className={skillsClassName}>Skills</Link>
