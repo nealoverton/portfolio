@@ -143,8 +143,8 @@ const Main = ({setHighlightedSection}) => {
                 <span >        </span>"React",<br/>
                 <span >        </span>"UX",<br/>
                 <span >        </span>"semantic HTML and accessibility"
-                <br/>&#93;<br/>
-                <span >    </span>&#125;;
+                <span >    </span><br/>&#93;<br/>
+                &#125;;
             </p>
         </div>
         <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
