@@ -116,7 +116,7 @@ const Main = ({setHighlightedSection}) => {
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
         <h3 className='experience__title' id='northcoders'>Student on Northcoders Coding Bootcamp</h3>
-        <p className='experience__text'>I studied on Northcoders' intensive 13-week full-stack development bootcamp. Their industry-led curriculum provided me with a broad set of technical skills as well as intorducing me to various Agile practices.</p>
+        <p className='experience__text'>I studied on Northcoders' intensive 13-week full-stack development bootcamp. Their industry-led curriculum provided me with a broad set of technical skills as well as introducing me to various Agile practices.</p>
         <div className='experience__details code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>11.2021</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
