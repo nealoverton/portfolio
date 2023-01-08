@@ -56,7 +56,7 @@ const Main = ({setHighlightedSection}) => {
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
         
         <div className='Main__project-text-container'>
-            <img src='tablehog-screenshot.png' className='Main__project__img' alt='Screenshot of tablehog website'/>
+            <img src='tablehog-screenshot.png' className='Main__project__img' alt='Screenshot of tablehog review website'/>
             <img src='api-screenshot.png' className='Main__project__img' alt='Screenshot of JSON output of board game reviews API'/>
             <p className='Main__project-text'>
                 A React web app designed to allow users to read board game reviews. Once logged in, they are permitted on comment and vote on reviews which interest them. <br/> <br/>
@@ -110,16 +110,42 @@ const Main = ({setHighlightedSection}) => {
         
         <h2 className='Main__subtitle' id='experience'>Experience</h2>
         <h3 className='experience__title' id='mcrcodes'>Tutor at Command Shift (formerly Manchester Codes)</h3>
-        <p className='experience__text'>I provide lecture support and one-on-one mentoring to adults on an intensive coding bootcamp.</p>
+        <p className='experience__text'>I provide lecture support and one-on-one mentoring to adults on a full-stack coding bootcamp.</p>
         <div className='experience__details code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>12.2022</span>;</p>
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
         <h3 className='experience__title' id='northcoders'>Student on Northcoders Coding Bootcamp</h3>
-        <p className='experience__text'>I studied on Northcoders' 13 week full-stack development bootcamp. This focused on Javascript, HTML, and CSS, as well as Git version control, TDD and Agile practices such as pair programming, stand ups, and kanban boards.</p>
+        <p className='experience__text'>I studied on Northcoders' intensive 13-week full-stack development bootcamp. Their industry-led curriculum provided me with a broad set of technical skills as well as intorducing me to various Agile practices.</p>
         <div className='experience__details code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>11.2021</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
+            <p>
+                <span className='blue'>const</span> curriculum = &#123;<br/>
+                <span >    </span>fundamentals: &#91;<br/>
+                <span >        </span>"Node.js",<br/>
+                <span >        </span>"HTML",<br/>
+                <span >        </span>"CSS",<br/>
+                <span >        </span>"Jest",<br/>
+                <span >        </span>"Git"<br/>
+                <span >    </span>&#93;,<br/>
+
+                <span >    </span>backend: &#91;<br/>
+                <span >        </span>"Express",<br/>
+                <span >        </span>"Supertest",<br/>
+                <span >        </span>"psql",<br/>
+                <span >        </span>"APIs",<br/>
+                <span >        </span>"CI/CD"<br/>
+                <span >    </span>&#93;,<br/>
+
+                <span >    </span>frontend: &#91;<br/>
+                <span >        </span>"DOM",<br/>
+                <span >        </span>"React",<br/>
+                <span >        </span>"UX",<br/>
+                <span >        </span>"semantic HTML and accessibility"
+                <br/>&#93;<br/>
+                <span >    </span>&#125;;
+            </p>
         </div>
         <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <h3 className='experience__title' id='trading'>Sports Trading Consultant</h3>
