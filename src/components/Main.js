@@ -123,26 +123,26 @@ const Main = ({setHighlightedSection}) => {
             <p>
                 <span className='blue'>const</span> curriculum = &#123;<br/>
                 <span >    </span>fundamentals: &#91;<br/>
-                <span >        </span>"Node.js",<br/>
-                <span >        </span>"HTML",<br/>
-                <span >        </span>"CSS",<br/>
-                <span >        </span>"Jest",<br/>
-                <span >        </span>"Git"<br/>
+                <span >        </span><span className='green'>"Node.js"</span>,<br/>
+                <span >        </span><span className='green'>"HTML"</span>,<br/>
+                <span >        </span><span className='green'>"CSS"</span>,<br/>
+                <span >        </span><span className='green'>"Jest"</span>,<br/>
+                <span >        </span><span className='green'>"Git"</span><br/>
                 <span >    </span>&#93;,<br/>
 
                 <span >    </span>backend: &#91;<br/>
-                <span >        </span>"Express",<br/>
-                <span >        </span>"Supertest",<br/>
-                <span >        </span>"psql",<br/>
-                <span >        </span>"APIs",<br/>
-                <span >        </span>"CI/CD"<br/>
+                <span >        </span><span className='green'>"Express"</span>,<br/>
+                <span >        </span><span className='green'>"Supertest"</span>,<br/>
+                <span >        </span><span className='green'>"psql"</span>,<br/>
+                <span >        </span><span className='green'>"APIs"</span>,<br/>
+                <span >        </span><span className='green'>"CI/CD"</span><br/>
                 <span >    </span>&#93;,<br/>
 
                 <span >    </span>frontend: &#91;<br/>
-                <span >        </span>"DOM",<br/>
-                <span >        </span>"React",<br/>
-                <span >        </span>"UX",<br/>
-                <span >        </span>"semantic HTML and accessibility"<br/>
+                <span >        </span><span className='green'>"DOM"</span>,<br/>
+                <span >        </span><span className='green'>"React"</span>,<br/>
+                <span >        </span><span className='green'>"UX"</span>,<br/>
+                <span >        </span><span className='green'>"semantic HTML and accessibility"</span><br/>
                 <span >    </span>&#93;<br/>
                 &#125;;
             </p>

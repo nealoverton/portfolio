@@ -16,8 +16,8 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         <h2 className='SideBar__title'>Related Topics</h2>
         <h3 className='SideBar__subtitle' onClick={()=>setSkillListIsOpen(!skillListIsOpen)}>
             {skillListIsOpen ?
-            <IoCaretDown/> :
-            <IoCaretForward/>
+            <IoCaretDown alt='Expand options icon'/> :
+            <IoCaretForward alt='Collapse options icon'/>
             }         
             Skills
         </h3>
@@ -60,8 +60,8 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         
         <h3 className='SideBar__subtitle' onClick={()=>setProjectListIsOpen(!projectListIsOpen)}>
             {projectListIsOpen ?
-                <IoCaretDown/> :
-                <IoCaretForward/>
+                <IoCaretDown alt='Expand options icon'/> :
+                <IoCaretForward alt='Collapse options icon'/>
             }  
             Projects
         </h3>
@@ -74,8 +74,8 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         
         <h3 className='SideBar__subtitle' onClick={()=>setExperienceListIsOpen(!experienceListIsOpen)}>
             {experienceListIsOpen ?
-                <IoCaretDown/> :
-                <IoCaretForward/>
+                <IoCaretDown alt='Expand options icon'/> :
+                <IoCaretForward alt='Collapse options icon'/>
             } 
             Experience
         </h3>

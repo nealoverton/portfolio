@@ -38,7 +38,7 @@ const Navbar = ({sideBarDropDownIsOpen, setSideBarDropDownIsOpen}) => {
             </div>
 
             <button className='Navbar__hamburger' onClick={() => setHamburgerIsOpen(!hamburgerIsOpen)}>
-                {hamburgerIsOpen ? <RxCross1/> : <RxHamburgerMenu/>}
+                {hamburgerIsOpen ? <RxCross1 alt='Cross icon'/> : <RxHamburgerMenu alt='Hamburger menu icon'/>}
             </button>
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = ({sideBarDropDownIsOpen, setSideBarDropDownIsOpen}) => {
             
             <div className='path-separater'>
                 <button className='path-container__SideBar-icon' onClick={() => setSideBarDropDownIsOpen(!sideBarDropDownIsOpen)}>
-                    <BsLayoutTextSidebar/>
+                    <BsLayoutTextSidebar alt='Side menu icon'/>
                 </button>
                 <p className='path-container__path'>References <span className='comment'>  &#62;  </span>  <span className='path-container__path--hidable'>Javascript <span className='comment'> &#62;  </span> Standard built-in objects <span className='comment'>  &#62;  </span> Dev <span className='comment'>  &#62;  </span> </span>Dev.prototype.nealOverton()</p>
             </div>
