@@ -120,6 +120,7 @@ const Main = ({setHighlightedSection}) => {
         <div className='experience__details code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>11.2021</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
+            <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
             <p>
                 <span className='blue'>const</span> curriculum = &#123;<br/>
                 <span >    </span>fundamentals: &#91;<br/>

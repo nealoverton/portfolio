@@ -159,6 +159,10 @@
     margin-bottom: 1rem;
 }
 
+.experience__details p{
+    font-weight: 300;;
+}
+
 .anchor{
     position: relative; 
     top: -6rem; 
