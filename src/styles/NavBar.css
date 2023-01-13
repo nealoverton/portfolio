@@ -143,15 +143,16 @@
     white-space: pre-wrap;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     .path-container__path{
         font-size: 0.8rem;
     }
   }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 330px) {
     .path-container__path{
         font-size: 0.75rem;
+        font-weight: 300;
     }
   }
 
