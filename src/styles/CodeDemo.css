@@ -30,7 +30,8 @@
 }
 
 .code-demo__body__code-field p{
-    min-width: 22rem;
+    min-width: 25rem;
+    white-space: nowrap;
     margin: 0rem;
     line-height: 1.5rem;
     overflow-x: auto;
@@ -111,7 +112,7 @@
 }
 
 .code-demo__output-row__output-text{
-    text-align: justify;
+    text-align: left;
     margin: 0.6rem;
     line-height: 1.5rem;
     visibility: hidden;
