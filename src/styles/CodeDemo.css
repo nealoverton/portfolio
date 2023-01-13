@@ -33,8 +33,9 @@
     min-width: 22rem;
     margin: 0rem;
     line-height: 1.5rem;
-    font-weight: 350;
     overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.9rem;
 }
 
 .code-demo__body__number-column{
@@ -49,8 +50,9 @@
 
 .code-demo__body__number-column p{
     margin: 0rem 0.4rem 0rem 0rem;
-    font-weight: 350;
     line-height: 1.5rem;
+    font-family: monospace;
+    font-size: 0.9rem;
 }
 
 .code-demo__output-row{
@@ -111,10 +113,11 @@
 .code-demo__output-row__output-text{
     text-align: justify;
     margin: 0.6rem;
-    font-weight: 350;
     line-height: 1.5rem;
     visibility: hidden;
     opacity: 0;
+    font-family: monospace;
+    font-size: 0.9rem;
 }
 
 .code-demo__output-row__output-text.visible{

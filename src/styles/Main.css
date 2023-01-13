@@ -22,9 +22,6 @@
 
 .Main__intro{
     text-align: left;
-   
-
-    font-weight: 300;
 }
 
 .Main__subtitle{
@@ -71,12 +68,17 @@
     margin: 0rem;
     text-align: left;
     line-height: 2em;
-    font-weight: 300;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.Main__project-title{
+    font-size: 1rem !important;
+    font-weight: bold !important;
 }
 
 .Main__project-text{
     text-align: left;
-    font-weight: 300;
 }
 
 .Main__project-text-container{
@@ -141,13 +143,12 @@
   }
 
 .experience__title{
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     margin: 1rem 0rem 0rem;
 }
 
 .experience__text{
-    font-weight: 300;
     text-align: left;
 }
 
@@ -159,9 +160,6 @@
     margin-bottom: 1rem;
 }
 
-.experience__details p{
-    font-weight: 300;;
-}
 
 .anchor{
     position: relative; 

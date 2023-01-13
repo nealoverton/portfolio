@@ -46,11 +46,12 @@
 .SideBar__link {
     padding-left: 1rem;
     margin: 0.6rem;
-    font-weight: 300;
     color: black;
     text-decoration: none;
     display: flex;
     margin-bottom: 1.2rem;
+    font-family: monospace;
+    font-size: 0.9rem;
 }
 
 .SideBar__link:hover {
