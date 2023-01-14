@@ -4,7 +4,7 @@ const CodeDemo = () => {
 
     const [outputIsVisible, setOutputIsVisible] = useState(false);
     
-    const outputText =  <p className={outputIsVisible ? 'code-demo__output-row__output-text visible' : 'code-demo__output-row__output-text'}>
+    const outputText =  <p className={'code-demo__output-row__output-text code ' + (outputIsVisible ? 'visible' : '')}>
         &#62; I started teaching myself Java in late 2019 using online resources. Yes, that was an intense place to start and yes, I could write an abstract class before I could make a simple static web page.<br/>
         I loved it though and completing the Northcoders Coding Bootcamp in 2022 gave me a more rounded set of skills. Take a look below for more details.
     </p>;
@@ -12,7 +12,7 @@ const CodeDemo = () => {
     return (
         <div className='code-demo'>
             <p className='code-demo__title'>JavaScript Demo: Dev.nealOverton()</p>
-            <div className='code-demo__body'>
+            <div className='code-demo__body code'>
                 <div className='code-demo__body__number-column'>
                     <p>1</p>
                     <p>2</p>

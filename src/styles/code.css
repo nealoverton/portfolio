@@ -15,9 +15,12 @@
     white-space: pre-wrap;
 }
 
+.code{
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
 .code-background{
     background-color: var(--codegrey);
     font-weight: 400;
-    font-family: monospace;
-    font-size: 0.9rem;
 }

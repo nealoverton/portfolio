@@ -8,12 +8,12 @@ const Main = ({setHighlightedSection}) => {
     const blockClose = <span className='comment'>*&#47; &#125; &#41;<br/></span>;
 
     const introText = <p className='Main__intro'>
-        <span className='code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
+        <span className='code code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
     </p>
 
-    const skillsTextStart = <p className='skills-box__text'>
+    const skillsTextStart = <p className='skills-box__text code'>
         <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
-        {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} I tutor bootcamp students in the fundamentals of coding as well as the functional and object-oriented programming paradigms usinsg JavaScript{blockClose}
+        {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} I tutor bootcamp students in the fundamentals of coding as well as the functional and object-oriented programming paradigms using JavaScript{blockClose}
         {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to concepts like interfaces and generics, I have a solid foundation{blockClose}
         {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} striving to keep things semantic and accessible {blockClose}
         {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} test this page's responsiveness with your browser's dev tools {blockClose}
@@ -21,11 +21,11 @@ const Main = ({setHighlightedSection}) => {
         {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} some experience building simple Flutter apps {blockClose}
     </p>;
 
-    const skillsTextEnd = <p className='skills-box__text'>
+    const skillsTextEnd = <p className='skills-box__text code'>
         <br/><span id='frameworks' className='comment'>&#47;&#47;  Frameworks</span><br/>
         {nealOvertonWithBracket}<span className='blue'>React</span>{blockOpen} extensive experience, take a look at examples below (including this one) {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Jest</span>{blockOpen} well-versed in TDD including spies and mock functions {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps. I like how the layout is determined as the widgets are placed, it's like Lego. {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Jest</span>{blockOpen} I tutor bootcamp students in the ways of TDD, focusing on unit testing with mock functions and spies {blockClose}
+        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps. {blockClose}
 
         <br/><span id='other' className='comment'>&#47;&#47;  Other</span><br/>
         {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} check out the Tablehog API below, which uses a psql database {blockClose}
@@ -52,7 +52,7 @@ const Main = ({setHighlightedSection}) => {
         </div>
         
         <h2 className='Main__subtitle' id='projects' >Projects</h2>
-        <h3 className='Main__project-title code-background' id='tablehog'>Tablehog</h3>
+        <h3 className='Main__project-title code code-background' id='tablehog'>Tablehog</h3>
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
         
         <div className='Main__project-text-container'>
@@ -71,7 +71,7 @@ const Main = ({setHighlightedSection}) => {
 
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
 
-        <h3 className='Main__project-title code-background' id='meeting'>Meeting Room Booker</h3>
+        <h3 className='Main__project-title code code-background' id='meeting'>Meeting Room Booker</h3>
 
         <div className='Main__project-text-container'>
             <img src='meeting-screenshot.png' className='Main__project__img' alt='Screenshot of calendar from meeting room booking app'/>
@@ -83,12 +83,12 @@ const Main = ({setHighlightedSection}) => {
         </div>
         
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
-        <h3 className='Main__project-title code-background' id='cavern'>Cavern of Wonder</h3>
+        <h3 className='Main__project-title code code-background' id='cavern'>Cavern of Wonder</h3>
         
         <div className='Main__project-text-container'>
             <img src='cavern-screenshot.png' className='Main__project__img' alt='Screenshot of hot air balloon and rocky obstacles from cavern of wonder game'/>
             <p className='Main__project-text'>
-                My first foray into Unity one weekend: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
+                My first foray into Unity one weekend: navigate a hot air balloon through a procedurally-generated maze of obstacles. While the game is simple, I learned a lot (don't try to handle physics in <span className='code code-background'>Update()</span>, kids) and am excited to see what I can produce next. <br/><br/>
 
                 So-named because my friend's only remark when playing was "Man, how big is this cavern?".<br/><br/>
 
@@ -111,13 +111,13 @@ const Main = ({setHighlightedSection}) => {
         <h2 className='Main__subtitle' id='experience'>Experience</h2>
         <h3 className='experience__title' id='mcrcodes'>Tutor at Command Shift (formerly Manchester Codes)</h3>
         <p className='experience__text'>I provide lecture support and one-on-one mentoring to adults on a full-stack coding bootcamp.</p>
-        <div className='experience__details code-background'>
+        <div className='experience__details code code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>12.2022</span>;</p>
             <p><span className='blue'>const</span> endDate = null;</p>
         </div>
         <h3 className='experience__title' id='northcoders'>Student on Northcoders Coding Bootcamp</h3>
         <p className='experience__text'>I studied on Northcoders' intensive 13-week full-stack development bootcamp. Their industry-led curriculum provided me with a broad set of technical skills as well as introducing me to various Agile practices.</p>
-        <div className='experience__details code-background'>
+        <div className='experience__details code code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>11.2021</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>03.2022</span>;</p>
             <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
@@ -151,7 +151,7 @@ const Main = ({setHighlightedSection}) => {
         <ViewportBlock onEnterViewport={() => setHighlightedSection('experience')}/>
         <h3 className='experience__title' id='trading'>Sports Trading Consultant</h3>
         <p className='experience__text'>I monitored online gambling systems and was responsible for preventing and investigating potentially costly odds discrepancies. Working closely with the lead engineer on this project and helping out with UI design and bugfixing is what drew me towards coding.</p>
-        <div className='experience__details code-background'>
+        <div className='experience__details code code-background'>
             <p><span className='blue'>const</span> startDate = <span className='green'>04.2015</span>;</p>
             <p><span className='blue'>const</span> endDate = <span className='green'>11.2022</span>;</p>
             <p>console.<span className='red'>log</span>(status);  <span className='comment'>&#47;&#47;  self-employed</span></p>

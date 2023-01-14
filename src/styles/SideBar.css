@@ -50,8 +50,6 @@
     text-decoration: none;
     display: flex;
     margin-bottom: 1.2rem;
-    font-family: monospace;
-    font-size: 0.9rem;
 }
 
 .SideBar__link:hover {
