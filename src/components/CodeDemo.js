@@ -31,7 +31,7 @@ const CodeDemo = () => {
                     <p><span className='blue'>const</span> data = newDev.<span className='red'>nealOverton</span>(<span className='green'>2019</span>);</p>
                     <p> </p>
                     <p>console.<span className='red'>log</span>(data);</p>
-                    <p><span className='comment'>&#47;&#47;  expected output: data specific to Neal Overton</span></p>
+                    <p><span className='comment'>&#47;&#47;  expected output: properties of Neal Overton</span></p>
                 </div>
             </div>
             <div className='code-demo__output-row'>

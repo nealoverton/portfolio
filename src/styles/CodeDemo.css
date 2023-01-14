@@ -30,10 +30,11 @@
 }
 
 .code-demo__body__code-field p{
-    min-width: 25rem;
+    min-width: 22rem;
     margin: 0rem;
     line-height: 1.5rem;
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 .code-demo__body__number-column{
