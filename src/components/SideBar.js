@@ -68,6 +68,8 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
 
         <div className={projectListIsOpen ? 'SideBar__List' : 'SideBar__List--hidden'}>
             <Link smooth to={'#cavern'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.cavernOfWonder()</Link>
+            <Link smooth to={'#inventory'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.inventoryAPI()</Link>
+
             <Link smooth to={'#meeting'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.meetingRoomBooker()</Link>
             <Link smooth to={'#tablehog'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.tablehog()</Link>
         </div>

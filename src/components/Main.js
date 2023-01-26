@@ -71,6 +71,19 @@ const Main = ({setHighlightedSection}) => {
 
         <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
 
+        <h3 className='Main__project-title code code-background' id='inventory'>Inventory API</h3>
+
+        <div className='Main__project-text-container'>
+            <img src='spring-boot-api.png' className='Main__project__img' alt='Screenshot of JSON output from Spring Boot inventory API'/>
+            <p className='Main__project-text'>
+                Current WIP. A Java Spring Boot REST API for managing stock. Next step is to add store locations with many-to-many relationships to stock items<br/><br/>
+
+                Github repo: <a className='Main__project-text__link' href='https://github.com/nealoverton/spring-boot-api' target={'_blank'} rel='noreferrer'>https://github.com/nealoverton/spring-boot-api</a>
+            </p>
+        </div>
+
+        <ViewportBlock onEnterViewport={() => setHighlightedSection('projects')}/>
+
         <h3 className='Main__project-title code code-background' id='meeting'>Meeting Room Booker</h3>
 
         <div className='Main__project-text-container'>
