@@ -15,10 +15,13 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         <SectionMenu isResponsive={false} highlightedSection={highlightedSection}/>
         <h2 className='SideBar__title'>Related Topics</h2>
         <h3 className='SideBar__subtitle' onClick={()=>setSkillListIsOpen(!skillListIsOpen)}>
-            {skillListIsOpen ?
-            <IoCaretDown alt='Expand options icon'/> :
-            <IoCaretForward alt='Collapse options icon'/>
-            }         
+            <button className='Sidebar__expand-button'>
+                {skillListIsOpen ?
+                <IoCaretDown alt='Expand options icon'/> :
+                <IoCaretForward alt='Collapse options icon'/>
+                }  
+            </button>
+                   
             Skills
         </h3>
         
@@ -60,10 +63,12 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         </div>
         
         <h3 className='SideBar__subtitle' onClick={()=>setProjectListIsOpen(!projectListIsOpen)}>
+        <button className='Sidebar__expand-button'>
             {projectListIsOpen ?
                 <IoCaretDown alt='Expand options icon'/> :
                 <IoCaretForward alt='Collapse options icon'/>
-            }  
+            } 
+        </button> 
             Projects
         </h3>
 
@@ -76,10 +81,12 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         </div>
         
         <h3 className='SideBar__subtitle' onClick={()=>setExperienceListIsOpen(!experienceListIsOpen)}>
-            {experienceListIsOpen ?
-                <IoCaretDown alt='Expand options icon'/> :
-                <IoCaretForward alt='Collapse options icon'/>
-            } 
+            <button className='Sidebar__expand-button'>
+                {experienceListIsOpen ?
+                    <IoCaretDown alt='Expand options icon'/> :
+                    <IoCaretForward alt='Collapse options icon'/>
+                }
+            </button>
             Experience
         </h3>
         <div className={experienceListIsOpen ? 'SideBar__List' : 'SideBar__List--hidden'}>
