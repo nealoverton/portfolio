@@ -33,7 +33,7 @@ const Main = ({setHighlightedSection}) => {
 
             <p className='skills-box__text code'>
                 <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
-                {formatSkill("JavaScriptES6", "I tutor bootcamp students from their first steps with variables and operators, through functional and object-oriented programming, and ultimately on to creating complex, well-tested applications")}
+                {formatSkill("JavaScriptES6, Node.js", "I tutor bootcamp students from their first steps with variables and operators, through functional and object-oriented programming, and ultimately on to creating complex, well-tested applications")}
                 {formatSkill("Java", "self-taught from the fundamentals of programming up to building REST APIs with Spring Boot. Take a look at the Inventory API in the projects section below")}
                 {formatSkill("HTML", "striving to keep things semantic and accessible")}
                 {formatSkill("CSS", "test this page's responsiveness with your browser's dev tools")}
