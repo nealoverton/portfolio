@@ -49,6 +49,7 @@ const SideBar = ({ isResponsive = true, highlightedSection }) => {
         <Link smooth to={'#frameworks'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.Jest()</Link>
         <Link smooth to={'#other'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.PostgreSQL()</Link>
         <Link smooth to={'#frameworks'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.React()</Link>
+        <Link smooth to={'#frameworks'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.SpringBoot()</Link>
         <Link smooth to={'#languages'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>Dev.prototype.SQL()</Link>
         <Link smooth to={'#other'} scroll={el => scrollWithOffset(el)} className='SideBar__link code'>
             <Tooltip title="In experimental phase" position="top">

@@ -3,39 +3,23 @@ import ViewportBlock from './ViewportBlock.js';
 import { Link } from 'react-router-dom';
 
 const Main = ({setHighlightedSection}) => {
-    const nealOvertonWithBracket = <span><span className='red'>nealOverton</span><span className='comment'>&#40;&#40;</span></span>;
-    const blockOpen = <span className='comment'>&#41; =&#62; &#123; &#47;*</span>;
-    const blockClose = <span className='comment'>*&#47; &#125; &#41;<br/></span>;
-
-    const introText = <p className='Main__intro'>
-        <span className='code code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
-    </p>
-
-    const skillsTextStart = <p className='skills-box__text code'>
-        <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
-        {nealOvertonWithBracket}<span className='blue'>JavaScriptES6</span><span className='comment'>,</span> <span className='blue'>Node.js</span>{blockOpen} I tutor bootcamp students in the fundamentals of coding as well as the functional and object-oriented programming paradigms using JavaScript{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Java</span>{blockOpen} self-taught up to concepts like interfaces and generics, I have a solid foundation{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>HTML</span>{blockOpen} striving to keep things semantic and accessible {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>CSS</span>{blockOpen} test this page's responsiveness with your browser's dev tools {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>C#</span>{blockOpen} some experience writing Unity scripts{blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Dart</span>{blockOpen} some experience building simple Flutter apps {blockClose}
-    </p>;
-
-    const skillsTextEnd = <p className='skills-box__text code'>
-        <br/><span id='frameworks' className='comment'>&#47;&#47;  Frameworks</span><br/>
-        {nealOvertonWithBracket}<span className='blue'>React</span>{blockOpen} extensive experience, take a look at examples below (including this one) {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Jest</span>{blockOpen} I tutor bootcamp students in the ways of TDD, focusing on unit testing with mock functions and spies {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Flutter</span>{blockOpen} experimented with some basic apps. {blockClose}
-
-        <br/><span id='other' className='comment'>&#47;&#47;  Other</span><br/>
-        {nealOvertonWithBracket}<span className='blue'>PostgreSQL</span>{blockOpen} check out the Tablehog API below, which uses a psql database {blockClose}
-        {nealOvertonWithBracket}<span className='blue'>Unity</span>{blockOpen} I've been enjoying learning by making some simple games, check out my first attempt, Cavern of Wonder, below {blockClose}
-    </p>
+    const formatSkill = (name, description) => {
+        return <>
+            <span><span className='red'>nealOverton</span><span className='comment'>&#40;&#40;</span></span>
+            <span className='blue'>{name}</span>
+            <span className='comment'>&#41; =&#62; &#123; &#47;*</span> 
+            {description}
+            <span className='comment'>*&#47; &#125; &#41;<br/></span>
+        </>
+    }
 
 
     return <div className='Main'>
         <h1 className='Main__title'>Dev.prototype.nealOverton()</h1>
-        {introText}
+        <p className='Main__intro'>
+        <span className='code code-background'><b>Neal Overton</b></span> is a <b>full stack dev</b> and <b>bootcamp tutor</b>. He is prepared to write masses of code for the sake of a visual pun.
+        </p>
+
         <ViewportBlock 
             onEnterViewport={() => setHighlightedSection('tryme')}
         />
@@ -46,9 +30,31 @@ const Main = ({setHighlightedSection}) => {
         <h2 className='Main__subtitle' id='skills'>Skills</h2>
         <div className='skills-box'>
             <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
-            {skillsTextStart}
+
+            <p className='skills-box__text code'>
+                <span className='comment' id='languages'>&#47;&#47;  Languages</span><br/>
+                {formatSkill("JavaScriptES6", "I tutor bootcamp students from their first steps with variables and operators, through functional and object-oriented programming, and ultimately on to creating complex, well-tested applications")}
+                {formatSkill("Java", "self-taught from the fundamentals of programming up to building REST APIs with Spring Boot. Take a look at the Inventory API in the projects section below")}
+                {formatSkill("HTML", "striving to keep things semantic and accessible")}
+                {formatSkill("CSS", "test this page's responsiveness with your browser's dev tools")}
+                {formatSkill("C#", "some experience writing Unity scripts")}
+                {formatSkill("Dart", "some experience building simple Flutter apps")}
+            </p>
+            
+
             <ViewportBlock onEnterViewport={() => setHighlightedSection('skills')} />
-            {skillsTextEnd}
+
+            <p className='skills-box__text code'>
+                <br/><span id='frameworks' className='comment'>&#47;&#47;  Frameworks</span><br/>
+                {formatSkill("React", "extensive experience, take a look at examples in the projects section below (as well as this site itself)")}
+                {formatSkill("Jest", "I tutor bootcamp students in the ways of TDD, focusing on unit testing with mock functions and spies")}
+                {formatSkill("Spring Boot", "self-taught, you can find an example of my progress in the Inventory API in the projects section below. This is a REST API using JPA and Hibernate to manage a PSQL database with many-to-many relationships")}
+                {formatSkill("Flutter", "experimented with some basic apps")}
+
+                <br/><span id='other' className='comment'>&#47;&#47;  Other</span><br/>
+                {formatSkill("PostgreSQL", "Check out the Tablehog API and Inventory API in the projects section below, both of which use a psql database")}
+                {formatSkill("Unity", "I've been enjoying learning by making some simple games, check out my first attempt, Cavern of Wonder, below")}
+            </p>
         </div>
         
         <h2 className='Main__subtitle' id='projects' >Projects</h2>
